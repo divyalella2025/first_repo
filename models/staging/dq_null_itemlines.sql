@@ -1,5 +1,6 @@
 {{ config(materialized='table',
 database='SURESHDB',
+schema='DQ',
 alias='DQ_NULL_ITEMLINES') }}
 
 WITH dq_check as (
