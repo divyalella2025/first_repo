@@ -1,0 +1,12 @@
+jaffle_shop_1:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      threads: 16
+      account: OS93983
+      user: DIVYALELLA
+      database: SURESHDB
+      warehouse: COMPUTE_WH
+      schema: DBT
+      password: G@@dSnowflake2026
