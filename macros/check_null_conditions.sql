@@ -1,5 +1,5 @@
 
-{% macro check_nulls(table_name, column_list) %}
+{% macro check_null_conditions(table_name, column_list) %}
     {% set null_check_columns = [] %}
     {% for col in column_list %}
     {% do null_check_columns.append(col ~ ' IS NULL') %}

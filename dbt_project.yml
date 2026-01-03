@@ -33,7 +33,9 @@ models:
     # Config indicated by + and applies to all files under models
     staging:
       +database: DBT
+      +schema: STG
       +materialized: table
     cleansing:
-      +database: CLEANSING
+      +database: DBT
+      +schema: CLEANSING
       +materialized: table

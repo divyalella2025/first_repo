@@ -1,5 +1,4 @@
 {{ config(materialized='table',
-schema='dq',
 alias='DQ_NULL_ITEMLINES') }}
 
 WITH dq_check as (

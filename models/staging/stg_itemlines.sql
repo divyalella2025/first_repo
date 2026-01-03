@@ -1,5 +1,4 @@
-{{ config(materialized='table',
-schema='staging') }}
+{{ config(materialized='table') }}
 
 select
     L_ORDERKEY,L_PARTKEY,L_SUPPKEY,L_LINENUMBER,L_QUANTITY,L_EXTENDEDPRICE,
@@ -7,3 +6,4 @@ select
     L_RECEIPTDATE,L_SHIPINSTRUCT,L_SHIPMODE,L_COMMENT 
 from 
     SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.LINEITEM limit 200
+    
