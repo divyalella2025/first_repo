@@ -32,4 +32,8 @@ models:
   first_repo:
     # Config indicated by + and applies to all files under models
     staging:
+      +database: DBT
+      +materialized: table
+    cleansing:
+      +database: CLEANSING
       +materialized: table

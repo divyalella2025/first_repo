@@ -1,6 +1,5 @@
 {{ config(materialized='table',
-database='SURESHDB',
-schema='DQ') }}
+schema='staging') }}
 
 select
     L_ORDERKEY,L_PARTKEY,L_SUPPKEY,L_LINENUMBER,L_QUANTITY,L_EXTENDEDPRICE,
